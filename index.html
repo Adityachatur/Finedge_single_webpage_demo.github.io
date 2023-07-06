@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinEdeg website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/66dcd5c2ff.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<header>
+    <nav class="navbar">
+      <img src="./img/logo-1.jpg" alt="">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menu-icon"  onclick="toggleMenu()"></i>
+        
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="container">
+      <div class="left-side">
+        
+        <h1 class="heading" data-aos="fade-down"data-aos-easing="linear"
+        data-aos-duration="1500">Welcome to Finedeg Company</h1>
+        <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ligula eget lorem dictum blandit. Integer tincidunt justo urna, sed faucibus orci efficitur eu.</p>
+      </div>
+      <div class="right-side" data-aos="fade-down"data-aos-easing="linear"
+      data-aos-duration="1500">
+        <img src="./img/company_img.jpg" alt="Company Image">
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right"data-aos-easing="linear"
+      data-aos-duration="1500">About Us</h2>
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="2000">
+          <img src="./img/company-bg3.jpg" alt="About FinEdge">
+        </div>
+        <div class="about-text" data-aos="fade-down"data-aos-easing="linear"
+        data-aos-duration="2500">
+          <h3>Our Mission</h3>
+          <p>FinEdge is a forward-thinking fintech startup with a mission to revolutionize cross-border payments. We strive to provide individuals and businesses with seamless and secure financial transactions that transcend geographical boundaries.</p>
+          <h3>Why Choose FinEdge?</h3>
+          <ul>
+            <li>Fast and secure cross-border money transfers</li>
+            <li>Competitive exchange rates for currencies worldwide</li>
+            <li>Transparent fees with no hidden charges</li>
+            <li>24/7 customer support to assist you anytime</li>
+            <li>User-friendly interface for a seamless experience</li>
+            <li>Cutting-edge technology to ensure the utmost security</li>
+            <li>Regulated and licensed for your peace of mind</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="service-title" data-aos="fade-right"data-aos-easing="linear"
+  data-aos-duration="1500">
+    <h2>services</h2>
+  </div>
+
+<section class="services" id="services">
+    <div class="container">
+      <div class="card"  data-aos="fade-down"
+      
+      data-aos-duration="1000">
+        <div class="content">
+          <p class="heading"> individuals money Transfer
+          </p><p class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+            laboriosam at voluptas minus culpa deserunt delectus sapiente
+            inventore pariatur
+          </p>
+          <button class="btn">Read more</button>
+        </div>
+      </div>
+      <div class="card"  data-aos="fade-down"
+     
+      data-aos-duration="1500">
+        <div class="content">
+          <p class="heading">Business Payments
+          </p><p class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+            laboriosam at voluptas minus culpa deserunt delectus sapiente
+            inventore pariatur
+          </p>
+          <button class="btn">Read more</button>
+        </div>
+      </div>
+      <div class="card"  data-aos="fade-down"
+      
+      data-aos-duration="2000">
+        <div class="content">
+          <p class="heading">Real-Time Payment Tracking
+          </p><p class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
+            laboriosam at voluptas minus culpa deserunt delectus sapiente
+            inventore pariatur
+          </p>
+          <button class="btn">Read more</button>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+  
+<div class="container" data-aos="fade-down" data-aos-duration="2000">
+  <form action="/action_page.php">
+    <h3>Contact Form</h3>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="mail">Enter Email</label>
+    <input type="email" name="mail" id="mail" placeholder="Enter email" required>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" id="submit-button">
+  </form>
+</div>
+
+</section>
+
+<footer>
+  <div class="container">
+    <ul class="social-icons">
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+
+   
+    
+  </div>
+  <div class="social-line">
+    <p>@ All right Reversed</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="script.js"></script>
+</body>
+
+</html>
